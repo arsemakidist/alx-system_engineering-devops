@@ -1,6 +1,6 @@
-te a manifest that kills a process named killmenow
+# kill process killmenow
 
 exec { 'pkill':
-  command  => 'pkill -f killmenow',
+  command  => 'pkill killmenow',
   provider => 'shell',
 }
